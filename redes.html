@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultas sobre Redes e Internet</title>
+  <script src="https://kit.fontawesome.com/949136de06.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+
+    h3 {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 26px;
+    }
+
+    .contenedor-temas {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px;
+      scroll-behavior: smooth;
+    }
+
+    .tema {
+      flex: 0 0 350px;
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      min-height: 320px;
+    }
+
+    .tema:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .tema h2 {
+      color: #2c7be5;
+      margin-top: 0;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .pregunta {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #2c3e50;
+      font-size: 15px;
+    }
+
+    .respuesta {
+      margin-left: 8px;
+      margin-bottom: 10px;
+      color: #34495e;
+      font-size: 14px;
+    }
+
+    /* Scrollbar personalizada */
+    .contenedor-temas::-webkit-scrollbar {
+      height: 10px;
+    }
+    .contenedor-temas::-webkit-scrollbar-track {
+      background: #e0e0e0;
+      border-radius: 10px;
+    }
+    .contenedor-temas::-webkit-scrollbar-thumb {
+      background: #2c7be5;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h3>💡 Consultas sobre Redes e Internet</h3>
+
+  <div class="contenedor-temas">
+    <div class="tema">
+      <h2>1. Internet y su historia</h2>
+      <div class="pregunta">¿Qué es Internet y cómo funciona?</div>
+      <div class="respuesta">Internet es una red mundial de computadoras interconectadas que utilizan el protocolo TCP/IP para comunicarse. Permite el intercambio de información entre dispositivos mediante routers y servidores.</div>
+      <div class="pregunta">¿Cuál es la historia de Internet y cómo ha evolucionado?</div>
+      <div class="respuesta">Nació en los 60 con ARPANET. En los 80 adoptó TCP/IP y en los 90 se popularizó con la World Wide Web. Hoy es esencial para la comunicación global.</div>
+    </div>
+
+    <div class="tema">
+      <h2>2. WAN y LAN</h2>
+      <div class="pregunta">¿Cuál es la diferencia entre una red WAN y una red LAN?</div>
+      <div class="respuesta">La LAN cubre un área pequeña (hogar, oficina). La WAN conecta redes a gran escala, como Internet.</div>
+      <div class="pregunta">¿Cómo se utilizan en la práctica?</div>
+      <div class="respuesta">Las LAN conectan dispositivos locales. Las WAN enlazan sedes remotas o servicios globales.</div>
+    </div>
+
+    <div class="tema">
+      <h2>3. Ping y diagnóstico de redes</h2>
+      <div class="pregunta">¿Qué es el comando ping y cómo se utiliza?</div>
+      <div class="respuesta">Ping envía paquetes ICMP a otro dispositivo para verificar conexión y medir latencia.</div>
+      <div class="pregunta">¿Cómo se interpreta su salida?</div>
+      <div class="respuesta">Si recibes respuestas, hay conexión. Los milisegundos indican la velocidad; los errores, fallos de red.</div>
+    </div>
+
+    <div class="tema">
+      <h2>4. Cableado y conectividad</h2>
+      <div class="pregunta">¿Cuál es la diferencia entre un cable UTP recto y cruzado?</div>
+      <div class="respuesta">El recto conecta dispositivos distintos (PC–switch). El cruzado conecta iguales (PC–PC).</div>
+      <div class="pregunta">¿Cómo se cablea según T568A y T568B?</div>
+      <div class="respuesta">T568A inicia con verde/blanco–verde; T568B con naranja/blanco–naranja. Ambas definen el orden de hilos RJ-45.</div>
+    </div>
+
+    <div class="tema">
+      <h2>5. Redes y protocolos</h2>
+      <div class="pregunta">¿Qué es el protocolo TCP/IP?</div>
+      <div class="respuesta">Es el conjunto de normas que permite la comunicación en Internet. TCP garantiza entrega, IP direcciona los paquetes.</div>
+      <div class="pregunta">¿Qué otros protocolos existen?</div>
+      <div class="respuesta">HTTP/HTTPS (web), FTP (archivos), SMTP/IMAP (correo), y DNS (traducción de dominios).</div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Programación de Software - SENA CDA CHÍA
+  </footer>
+</body>
+</html>
